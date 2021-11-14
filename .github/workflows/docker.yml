@@ -1,6 +1,10 @@
 name: Publish Docker Image
-on: push
-  
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '**docker.yml**'
 jobs:
 
   build:
