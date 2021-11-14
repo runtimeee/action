@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-     - '**download_latest**'
+      - '**download_latest**'
 
 jobs:
   demo:
