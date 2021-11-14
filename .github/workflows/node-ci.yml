@@ -1,5 +1,10 @@
 name: learn-github-actions
-on: [push]
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '**node-ci.yml**'
 jobs:
   check-bats-version:
     runs-on: ubuntu-latest
